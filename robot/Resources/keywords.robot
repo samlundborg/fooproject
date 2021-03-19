@@ -104,7 +104,7 @@ Book Car
     Select Checkbox                 id:ms-opt-1
     Click Element                   id:filterPassHolder
     Select Checkbox                 id:ms-opt-6
-    Sleep                           2s
+    Wait Until Page Contains Element                    id:carSelect1
     Click Element                   id:carSelect1
     Page Should Contain             Confirm booking of
 
