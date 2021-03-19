@@ -40,7 +40,7 @@ pipeline {
                     script {
                           step(
                                 [
-                                  $class              : 'CarRentalWebTest',
+                                  $class              : 'Tests',
                                   outputPath          : 'Results',
                                   outputFileName      : '**/output.xml',
                                   reportFileName      : '**/report.html',
