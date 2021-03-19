@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "6e1aee12-128d-42c0-adc8-b40c83c7054c",
-		"name": "Restful Booker",
+		"name": "RestfulBooker",
 		"description": "## Overview\nThe Restful Booker API is a sample API based on hotel bookings. The API contains endpoints to demonstrate CRUD operations. The source code can be obtained from https://github.com/mwinteringham/restful-booker\n\n",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
