@@ -23,7 +23,7 @@ pipeline {
         }
         stage('newman') {
             steps {
-                sh 'newman run labbPostman.json --environment labbPostmanEnv.json --reporters junit'
+                sh 'newman run RestfulBooker.labbPostman.json --environment RestfulBooker.labbPostmanEnv.json --reporters junit'
             }
             post {
                 always {
