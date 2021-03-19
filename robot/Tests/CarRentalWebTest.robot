@@ -31,7 +31,7 @@ User can not book from yesterday
 User can not book a month prior
     [Documentation]     Test #4, testing selecting incorrect start-date
     [Tags]              Date_Select
-    Go to Web Pag_
+    Go to Web Page
     Book starting in a month - for 3 days
 
 User can see bookinghistory
