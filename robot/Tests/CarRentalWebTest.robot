@@ -34,24 +34,3 @@ User can not book a month prior
     Go to Web Page
     Book starting in a month - for 3 days
 
-User can see bookinghistory
-    [Documentation]     Test #5, testing seeing history of bookings
-    [Tags]              History
-    Go to Web Page
-    See history
-
-Test the flow to book a car
-    [Documentation]     Test #6, testing the flow of booking a car
-    [Tags]              VG_test
-    Given Go to Web Page
-    When Log in
-    And Select day
-    And Book Car
-    And Confirmed Booking with Card
-    Then Verify Booked Car in My Page
-
-Test for deleting and clearing all bookings
-    [Documentation]     Test #7, testing clearing the last booking made
-    [Tags]              Rouge
-    Go to Web Page
-    Cancel car
