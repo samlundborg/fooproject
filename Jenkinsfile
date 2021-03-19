@@ -11,11 +11,6 @@ pipeline {
                 sh "mvn compile"
             }
         }
-        stage('newman') {
-            steps {
-                sh 'newman run Restful_Booker_Facit.postman_collection.json --environment Restful_Booker.postman_environment.json --reporters junit'
-            }
-        }
         stage('Test') {
             steps {
                 sh "mvn test"
@@ -25,6 +20,16 @@ pipeline {
                     junit '**/TEST*.xml'
                 }
             }
+        }
+        stage('newman') {
+            steps {
+                sh 'newman run Restful_Booker_Facit.postman_collection.json --environment Restful_Booker.postman_environment.json --reporters junit'
+            }
+            post {
+                always {
+                        junit '**/*xml'
+                    }
+                }
         }
     }
 }
