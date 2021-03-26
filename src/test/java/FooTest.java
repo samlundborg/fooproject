@@ -6,4 +6,6 @@ class FooTest {
     void myMethod() {
         assertTrue(Foo.myMethod());
     }
+
+
 }
