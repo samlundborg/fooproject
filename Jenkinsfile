@@ -56,7 +56,8 @@ pipeline {
             }
         }
         stage('Generate HTML report') {
-            cucumber buildStatus: 'UNSTABLE',
+            steps {
+                cucumber buildStatus: 'UNSTABLE',
                 reportTitle: 'My report',
                 fileIncludePattern: '**/*.json',
                 trendsLimit: 10,
@@ -66,6 +67,7 @@ pipeline {
                            'value': 'Firefox'
                     ]
                 ]
+            }
             post {
                 always {
                     cucumber buildStatus: 'UNSTABLE',
